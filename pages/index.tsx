@@ -20,8 +20,8 @@ export default function Home() {
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.tsx</code>
-            <Link href="/products">商品一覧へ</Link>
           </p>
+          <Link href="/products">商品一覧へ</Link>
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
