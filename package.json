@@ -1,5 +1,6 @@
 {
-  "name": "next12",
+  "homepage": ".",
+  "name": "next-tutorial",
   "version": "0.1.0",
   "private": true,
   "scripts": {
