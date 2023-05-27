@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -53,13 +53,13 @@ export async function getStaticPaths() {
 // }
 
 const Product = ({ product }: any) => {
-  const router = useRouter();
-  const { id } = router.query;
+  // const router = useRouter();
+  // const { id } = router.query;
 
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1>{id}のページです</h1>
+        {/* <h1>{id}のページです</h1> */}
         <Image src={product.image} alt="商品" width={300} height={400} />
         <p>{product.name}</p>
         <br />
