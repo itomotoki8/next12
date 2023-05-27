@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 //SSGの場合 最初のロードですべてレンダリング
 
@@ -52,7 +53,7 @@ const Product = ({ product }: any) => {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1>{id}のページです</h1>
-        <img src={product.image} width={300} height={400} />
+        <Image src={product.image} alt="商品" width={300} height={400} />
         <p>{product.name}</p>
         <br />
         <Link href="/products">商品一覧へ</Link>
