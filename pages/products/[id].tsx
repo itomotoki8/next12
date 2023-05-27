@@ -6,7 +6,11 @@ import Image from "next/image";
 //SSGの場合 最初のロードですべてレンダリング
 
 export async function getStaticProps({ params }: any) {
-  const req = await fetch(`http://localhost:3000/${params.id}.json`);
+  // const req = await fetch(`http://localhost:3000/${params.id}.json`);
+  const req = await fetch(
+    `http://next12/${params.id}.json-i933se306-itomotoki8.vercel.app`
+  );
+
   const data = await req.json();
 
   return {
@@ -17,7 +21,10 @@ export async function getStaticProps({ params }: any) {
 }
 
 export async function getStaticPaths() {
-  const req = await fetch(`http://localhost:3000/products.json`);
+  // const req = await fetch(`http://localhost:3000/products.json`);
+  const req = await fetch(
+    `http://next12/products.json-i933se306-itomotoki8.vercel.app`
+  );
   const data = await req.json();
 
   const paths = data.map((product: string[]) => {
