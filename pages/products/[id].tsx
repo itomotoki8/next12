@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
 import Link from "next/link";
-import { type } from "os";
 
 //SSGの場合 最初のロードですべてレンダリング
 
